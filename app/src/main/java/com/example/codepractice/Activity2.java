@@ -21,4 +21,6 @@ public class Activity2 extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
+    }
+
 }
