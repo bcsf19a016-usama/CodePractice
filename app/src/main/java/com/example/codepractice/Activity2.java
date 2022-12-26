@@ -3,7 +3,9 @@ package com.example.codepractice;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 public class Activity2 extends AppCompatActivity {
 
@@ -21,6 +23,12 @@ public class Activity2 extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
+    }
+
+    public void CallingIntent(View view) {
+        Uri uri = Uri.parse("tel:+923001234567");
+        Intent intent = new Intent(Intent.ACTION_DIAL, uri);
+        startActivity(intent);
     }
 
 }
