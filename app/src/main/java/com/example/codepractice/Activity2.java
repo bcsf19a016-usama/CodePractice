@@ -26,7 +26,7 @@ public class Activity2 extends AppCompatActivity {
     }
 
     public void CallingIntent(View view) {
-        Uri uri = Uri.parse("tel:+923001234567");
+        Uri uri = Uri.parse("tel:+923405460022");
         Intent intent = new Intent(Intent.ACTION_DIAL, uri);
         startActivity(intent);
     }
